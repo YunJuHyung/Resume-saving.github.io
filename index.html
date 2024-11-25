@@ -240,37 +240,54 @@
 
         .history-container {
             display: flex;
-            flex-direction: column; /* 세로 방향으로 배치 */
+            flex-direction: column;
             gap: 20px;
         }
 
         .history-photo {
-            width: 50%; /* 사진의 너비 설정 */
-            height: 50%; /* 사진의 높이 설정 */
+            width: 50%;
+            height: 50%;
             
         }
 
         .history-photo img {
-            width: 100%; /* 사진을 부모 요소에 맞게 조정 */
-            height: auto; /* 비율 유지 */
-            border-radius: 8px; /* 사진 모서리를 둥글게 */
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
 
         .introduce-container {
             display: flex;
-            align-items: flex-start; /* 세로 정렬을 위한 설정 */
-            gap: 20px; /* 사진과 텍스트 사이의 간격 */
+            align-items: flex-start;
+            gap: 20px;
         }
 
         .introduce-photo img {
-            width: 150px; /* 사진의 크기를 설정 */
-            height: auto; /* 비율 유지 */
-            border-radius: 8px; /* 사진 모서리를 둥글게 */
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
         }
 
         .introduce-content {
-            flex: 1; /* 텍스트 부분이 나머지 공간을 차지하도록 */
+            flex: 1;
+        }
+
+        .black-link {
+            display: flex;
+            align-items: flex-end;
+            color: black;
+        }
+
+        .black-link:hover {
+            color: rgb(80, 121, 158);
+        }
+
+        .apple-link-image {
+            width: 30px;
+            height: auto;
+            margin-right: 3px;
+            border-radius: 8px;
         }
 
         
@@ -287,7 +304,7 @@
         <div class="introduce-content">
             <h2>Introduce</h2>
             <div class="project-details">
-                <p><span class="highlight">2024년 3월</span>부터 크고 작은 <span class="highlight">25 개의 토이 프로젝트</span>를 만들었습니다. 만든 프로그램의 피드백을 받는 것을 즐기며 프로그래밍을 공부하는 과정에서 팀원들에게 <span class="highlight">실력이 가장 많이 향상된 1인</span>으로 얘기된 경험이 있습니다.</p>
+                <p><span class="highlight">2024년 3월</span>부터 크고 작은 <span class="highlight">25 개의 토이 프로젝트와 1개의 앱 배포경험</span>이 있습니다. 만든 프로그램의 피드백을 받는 것을 즐기며 프로그래밍을 공부하는 과정에서 팀원들에게 <span class="highlight">실력이 가장 많이 향상된 1인</span>으로 얘기된 경험이 있습니다.</p>
             </div>
         </div>
     </div>
@@ -352,6 +369,8 @@
                 <span class="stack-item">Realm</span>
                 <span class="stack-item">Core-Data</span>
                 <span class="stack-item">UserDefaults</span>
+                <span class="stack-item">FireBase Realtime DB</span>
+
             </div>
         </div>
         <div class="stack-category">
@@ -360,6 +379,7 @@
                 <span class="stack-item">DropDown</span>
                 <span class="stack-item">Chameleon</span>
                 <span class="stack-item">FireBase</span>
+                <span class="stack-item">FireBase Storage</span>
             </div>
         </div>
     </div>
@@ -376,10 +396,18 @@
     
     <div class="project">
         <div class="project-header">
-            <div class="project-title">OpenKcal</div>
+            <div class="project-title">오픈칼로리</div>
             <div class="project-date">2024.09 ~</div>
+            
         </div>
         <div class="project-subtitle">케이크 칼로리 비교 서비스 (인원: 1인)</div>
+
+        <div class="project-subtitle">
+            <a href="https://apps.apple.com/us/app/오픈칼로리/id6738415371" class="black-link">
+                <img src="Appstore Image.png" class="apple-link-image" alt="애플스토어 오픈칼로리 다운로드">
+            오픈칼로리 다운로드
+            </a>
+        </div>
         <div class="project-details">
             <ul>
                 <li><strong>UI / UX</strong>
@@ -387,8 +415,8 @@
                     <div class="achievement">성과: 일관된 디자인과 사용자의 UI콘택트 편의성 개선</div>
                 </li>
                 <li><strong>데이터 관리</strong>
-                    <div>- <span class="highlight">Realm</span>을 사용한 기본적인 로컬 데이터 CRUD 구현, 추후 서버 서비스를 사용하여 관리자가 데이터를 업데이트하고 관리하는 구조로 확장할 계획입니다.
-                    *파이어베이스 서버 서비스 사용 진행중</div>
+                    <div>- <span class="highlight">Realm</span>을 사용한 기본적인 로컬 데이터 CRUD 구현, 추후 서버 서비스를 사용하여 관리자가 데이터를 업데이트하고 관리하는 구조로 확장할 계획입니다.<br>
+                    *추가: db관리와 운용을 파이어베이스<span class="highlight"> Realtime DB</span>와 <span class="highlight">Storage</span>로 바꿨습니다.</div>
                     <div class="achievement">성과: 앱 배포 전 단계에서 로컬 데이터 관리와 서버 연동을 고려한 설계를 통해, 확장성과 유지보수의 중요성을 깨달았습니다.</div>
                 </li>
                 <li><strong>데이터 필터링</strong>
