@@ -296,6 +296,13 @@
             border-radius: 8px;
         }
 
+
+        .gird-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 5px;
+            
+        }
         
 
     </style>
@@ -310,7 +317,7 @@
         <div class="introduce-content">
             <h2>Introduce</h2>
             <div class="project-details">
-                <p><span class="highlight">2024년 3월</span>부터 크고 작은 <span class="highlight">25 개의 토이 프로젝트와 1개의 앱 배포경험</span>이 있습니다. 만든 프로그램의 피드백을 받는 것을 즐기며 프로그래밍을 공부하는 과정에서 팀원들에게 <span class="highlight">실력이 가장 많이 향상된 1인</span>으로 얘기된 경험이 있습니다.</p>
+                <p><span class="highlight">싹 바꿔야돼</span></p>
             </div>
         </div>
     </div>
@@ -393,6 +400,14 @@
                 <span class="stack-item">FireBase Storage</span>
             </div>
         </div>
+        <div class="stack-category">
+            <h3>License</h3>
+            <div class="stack-item">
+                <span class="stack-item">정보처리기사 필기</span>
+            </div>
+        </div>
+
+        </div>
     </div>
     <h2>My History</h2>
     <div class="history-container">
@@ -416,17 +431,27 @@
         <div class="project-subtitle">
             <a href="https://apps.apple.com/us/app/오픈칼로리/id6738415371" class="black-link">
                 <img src="Appstore Image.png" class="apple-link-image" alt="애플스토어 오픈칼로리 다운로드">
-            오픈칼로리 다운로드
+            <div>오픈칼로리 다운로드</div>
             </a>
+            
         </div>
         <div class="project-details">
+            
             <ul>
+                <li><strong>개발 동기</strong>
+                <div class="achievement">하나의 프로젝트를 처음부터 끝까지 온전히 내 손으로 만들어 보고 싶다는 목표에서 시작하여 실 사용자가 있는 '케이크 칼로리 비교 앱'을 개발했습니다. 단순한 칼로리 비교를 넘어 사용자들이 쉽고 재미있게 정보를 접할 수 있도록 UI/UX를 설계했으며, 
+                    특히 사용자 경험을 고려한 데이터 필터링 및 정렬 기능을 구현하며 개발 역량을 키웠습니다. <span class="highlight">기획부터 분석, 설계, 개발, 배포까지 전 과정을 직접 경험</span>하며, 서비스 기획과 기술적 문제 해결 능력을 동시에 향상시킬 수 있었습니다.</div>
+                </li>
                 <li><strong>UI / UX</strong>
-                    <div>- <span class="highlight">HIG를 고려</span>한 UI를 설계하고, 비 개발자의 피드백을 받아 사용자가 쉽게 이해하고 사용할 수 있는 화면을 구성했습니다.</div>
-                    <div class="achievement">성과: 일관된 디자인과 사용자의 UI콘택트 편의성 개선</div>
+                    <div>- <span class="highlight">HIG를 고려</span>한 UI를 설계하고, <span class="highlight">실 사용자의 피드백</span>을 받아 불편함을 개선했습니다.</div>
+                    <div>불특정 사용자의 건의사항: 어떤 케이크가 더 적은 칼로리인지 한 눈에 알 수 있었으면 좋을 것 같아요.</div>
+                    <div class="achievement" style="display: flex; justify-content: space-between;">
+                        문제 개선: 케이크 사진 좌측상단에 ☆low 문자를 통해 사용자에게 직관적인 화면을 제공했습니다.
+                        <img src="☆LowCake.png" width="20%" height="30%">
+                    </div>
                 </li>
                 <li><strong>데이터 관리</strong>
-                    <div>- <span class="highlight">Realm</span>을 사용한 기본적인 로컬 데이터 CRUD 구현, 추후 서버 서비스를 사용하여 관리자가 데이터를 업데이트하고 관리하는 구조로 확장할 계획입니다.<br>
+                    <div>- <span class="highlight">Realm</span>을 사용한 기본적인 로컬 데이터 CRUD 구현했습나다.<br>
                     *추가: db관리와 운용을 파이어베이스<span class="highlight"> Realtime DB</span>와 <span class="highlight">Storage</span>로 바꿨습니다.</div>
                     <div class="achievement">성과: 앱 배포 전 단계에서 로컬 데이터 관리와 서버 연동을 고려한 설계를 통해, 확장성과 유지보수의 중요성을 깨달았습니다.</div>
                 </li>
@@ -441,171 +466,93 @@
 
     <div class="section-title"><span class="notionColor-green">Weekly</span> Project</div>
 
+    <div class="gird-container">
     <div class="project">
         <div class="project-header">
-            <div class="project-title">점심 메뉴 추천 프로그램</div>
+            <div class="project-title">점심 메뉴 추천 프로그램 (알고리즘)</div>
             <div class="project-date">2024.06</div>
         </div>
-        <div class="project-reason">
-            점심 메뉴를 재미있고 간단하게 정하고 싶었습니다.
-        </div>
-        <div class="project-subtitle">주요 기능</div>
         <ul>
-            <li><span class="highlight">가중치 랜덤 알고리즘 구현</span>: 메뉴 중복을 줄여 사용자의 흥미를 높였습니다.</li>
-            <li>점심 메뉴 추가 및 관리 기능</li>
-            <li>랜덤한 점심 메뉴 선택 시스템</li>
-            <li>선택된 메뉴 기록 및 시간 저장</li>
-            <li>기록 확인 및 통계 분석</li>
+            <li><span class="highlight">가중치 랜덤 알고리즘 구현</span>을 통한 중복 메뉴가 선택될때마다 20%씩 감소시켰습니다.</li>
+            알고리즘의 사용이유와 결과: 메뉴의 편향성을 줄이기 위해서 사용했습니다. 특정 메뉴가 반복되지 않아 프로그램 사용감 향상되었습니다.
         </ul>
     </div>
 
     <div class="project">
         <div class="project-header">
-            <div class="project-title">랜덤 이름 생성기</div>
+            <div class="project-title">랜덤 이름 생성기 (API)</div>
             <div class="project-date">2024.06</div>
         </div>
-        <div class="project-reason">
-            게임에서 닉네임 생성 시 소요되는 시간을 줄이고자 개발했습니다.
-        </div>
-        <div class="project-subtitle">기술 스택</div>
         <ul>
-            <li>네트워킹: URLSession을 활용한 HTTP 요청 처리</li>
-            <li>오픈소스 API: rivestsoft API를 활용한 랜덤 닉네임 생성</li>
-            <li>비동기 처리: DispatchSemaphore를 통한 작업 제어</li>
+            <li>오픈소스 API: rivestsoft API를 활용한 랜덤한 닉네임을 생성하는 프로그램을 제작했습니다.</li>
+            <li>Codable을 사용해 JSON을 struct로 변환</li>
+            <li>URL에러에 대한 실패 처리</li>
+            <li>async/await를 활용한 네트워크 요청 처리</li>
         </ul>
     </div>
 
     <div class="project">
         <div class="project-header">
-            <div class="project-title">도서 검색 프로그램</div>
+            <div class="project-title">도서 검색 프로그램 (API)</div>
             <div class="project-date">2024.07</div>
         </div>
-        <div class="project-reason">
-            만화카페의 도서검색 프로그램을 만들어보고 싶었습니다.
-        </div>
-        <div class="project-subtitle">주요 기능</div>
         <ul>
-            <li>책 제목을 통한 검색 시스템</li>
-            <li>효율적인 페이지 이동 기능</li>
-            <li>검색 기록 저장 및 조회 기능</li>
-            <li>검색 히스토리 삭제 기능</li>
+            <li>카카오 API를 사용하여 도서 검색 프로그램 제작했습니다.</li>
+            <li>사용할 데이터만 struct로 정의</li>
+            <li>응답 관련정보의 페이지 수 를 확인하고 파라미터로 최대 50페이지까지 도서 검색을 가능하게 구성했습니다.</li>
         </ul>
-        <div class="achievement">
-            <div class="project-subtitle">성과</div>
-            <ul>
-                기본적인 API의 사용
-            </ul>
-        </div>        
     </div>
 
     <div class="project">
         <div class="project-header">
-            <div class="project-title">나만의 노래 플레이리스트</div>
+            <div class="project-title">나만의 노래 플레이리스트 (프레임워크)</div>
             <div class="project-date">2024.07</div>
         </div>
-        <div class="project-reason">
-            유튜브로 노래를 들을때 플레이리스트에서 좀더 세분화 할 수 없을까 생각해서 만들었습니다.
-        </div>
-        <div class="project-subtitle">주요 기능</div>
         <ul>
-            <li>파일 시스템: 정해진 파일 경로의 파일 탐색</li>
-            <li>재생 모드: 한곡 재생, 무한 반복, 장르별 재생</li>
-            <li>랜덤 재생: 장르별 무작위 재생 기능</li>
-            <li>멀티쓰레딩: 다중 작업을 위한 쓰레드 관리</li>
+            <li>미디어를 재생할 수 있는 프레임워크 사용했습니다 (AVFoundation)</li>
+            <hr>
+            <div class="project-subtitle">발견한 문제: 미디어 재생시 3초만에 모든 프로그램이 종료되는 현상</div>
+            <li>원인과 결과: 함수 자체가 메인스레드에서 실행이 종료되어 소리를 재생하는 플레이어 객채가 ARC에 의해 해제됩니다.
+                오디오 재생을 비동기로 처리해서 해결했습니다.
+            </li>
+
+
         </ul>
     </div>
 
     <div class="project">
         <div class="project-header">
-            <div class="project-title">Todo-List</div>
+            <div class="project-title">Todo-List (CRUD)</div>
             <div class="project-date">2024.08</div>
         </div>
-        <div class="project-reason">
-            해야할일의 우선순위를 적어놓고 계속 보기위해서 만들었습니다.
-        </div>
-        <div class="project-subtitle">주요 기능</div>
         <ul>
-            <li>CRUD: UUID로 유저 확인 및 데이터 관리</li>
-            <li>사용자 관리: 유저별 고유 ID로 저장된 데이터 접근</li>
+            <li>CRUD: UUID로 유저 확인 및 데이터 관리를 하는 할일 목록 프로그램을 제작했습니다.</li>
         </ul>
     </div>
 
     <div class="project">
         <div class="project-header">
-            <div class="project-title">방탈출 프로그램</div>
+            <div class="project-title">방탈출 프로그램 (스레드)</div>
             <div class="project-date">2024.08</div>
         </div>
-        <div class="project-reason">
-            커맨드라인툴로 방탈출을 하는 게임을 만들어보면 어떨까 생각했습니다.
-        </div>
-        <div class="project-subtitle">주요 기능</div>
         <ul>
-            <li>데이터 관리
-                <ul>
-                    <li>싱글톤패턴을 이용한 데이터 관리</li>
-                    <li>UserDefaults를 사용하여 검색 기록 저장 및 관리</li>
-                </ul>
-            </li>
-            <li>스레드 사용
-                <ul>
-                    <li>백그라운드 스레드에서 두가지의 타이머를 관리했습니다.</li>
-                </ul>
-            </li>
-            <li>데이터 구조
-                <ul>
-                    <li>배열을 사용하여 검색 기록 및 도서 데이터 관리 (bookNameArray, UserDefaults에 저장된 검색 기록 배열)</li>
-                </ul>
-            </li>
+            <li>백그라운드 스레드를 한번 더 사용해서 방의 탈출 시간을 제한시켜봤습니다.</li>
+            <li>UserDefault를 이용해 탈출 시간 아이템 게임 저장 요소를 적용시켰습니다.</li>
         </ul>
-        <div class="achievement">
-            <div class="project-subtitle">성과</div>
-            <ul>
-                효율적인 객체지향적 데이터관리를 통한 프로그램 구성
-            </ul>
-        </div>
     </div>
-
-    <div class="nosection-title"><span class="notionColor-green">Weekly</span> Project</div>
-    <div class="project-subtitle-onlyGDWEB">GDWEB 디자인 따라하기 <br>UI/UX</div>
     
     <div class="project">
         <div class="project-header">
-            <div class="project-title">서로조은배달 앱 UI 구성</div>
+            <div class="project-title">서로조은배달 / 직방 앱 UI 구성 (UI/UX)</div>
             <div class="project-date">2024.05</div>
         </div>
-        <div class="project-subtitle">주요 기능</div>
-        <ul>
-            <li>모든 기기의 화면에서 적용 가능하게 설정</li>
-            <li>각 화면마다 필요한 스크롤뷰 구성</li>
-        </ul>
-        <div class="achievement">
-            <div class="project-subtitle">성과</div>
-            <ul>
-                사용자 피드백을 통해 익숙하고 쉬운 UI/UX를 구현할 수 있는 역량 향상
-            </ul>
-        </div>
+        <div class="project-subtitle">기본적인 UI 실력 향상을 위해 제작했습니다.</div>
+        <img src="AutoLayoutAbout.png" 
+        style="position: relative;" width="100%">
+    </div>
     </div>
 
-    <div class="project">
-        <div class="project-header">
-            <div class="project-title">직방 회원 가입 앱 UI 구성</div>
-            <div class="project-date">2024.05</div>
-        </div>
-        <div class="project-subtitle">주요 기능</div>
-        <ul>
-            <li>모든 기기의 화면에서 적용 가능하게 설정</li>
-            <li>oo로 시작 클릭시 네비게이션으로 이동하도록 UIKit를 사용하여 설정<li>
-            <li>약관 동의 버튼을 개별로 인식, 모두 동의하기 버튼을 동기화</li>
-        </ul>
-        <div class="achievement">
-            <div class="project-subtitle">성과</div>
-            <ul>
-                기본적인 UI따라하기 였지만 비개발자인 친구와 얘기하며 UI에 디테일에 대해서 고민해볼 수 있는 시간이였습니다
-            </ul>
-        </div>
-    </div>
-
-    <div class="section-title">📚Udemy Study</div>
+    <div class="section-title">📚semi project</div>
 
     <div class="project">
         <div class="project-header">
