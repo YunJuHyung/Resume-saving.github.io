@@ -14,7 +14,7 @@
         }
         
         h1 {
-            font-size: 2.5em;
+            font-size: 2.0em;
             color: #2d3436;
             margin-bottom: 30px;
             border-bottom: 4px solid #0984e3;
@@ -311,7 +311,7 @@
     </style>
 </head>
 <body>
-    <h1>안녕하세요 <span class="header-name">윤주형</span>의 이력서에 와주셔서 감사합니다.</h1>
+    <h1>도전하고 성장하는<br> iOS 개발자, <span class="header-name">윤주형</span>입니다.</h1>
     
     <div class="introduce-container">
         <div class="introduce-photo">
@@ -481,8 +481,11 @@
                     </div>
                 </li>
                 <li><strong>화면 간 데이터 전달 문제와 구조 개선</strong>
-                    <div class="achievement">문제: ViewController 간 데이터 전달 시, 기존 화면의 인스턴스를 참조하지 못해 데이터가 정상적으로 전달되지 않는 오류 발생했습니다.<hr>
-                        <div>개선 방법: <strong>클로저</strong>를 활용하여 데이터 변경 사항이 기존 화면에도 <span class="highlight">즉시 반영</span>되도록 설계했습니다. 또한, weak self를 사용하여 <span class="highlight">메모리 누수를 방지</span>하고 안전한 데이터 전달을 구현했습니다.</div>
+                    <div class="achievement">문제: ViewController 간 데이터 전달 시, 새로 생성된 인스턴스에서 데이터를 변경해도 기존 화면에는 반영되지 않는 문제가 발생했습니다.<hr>
+                        <div>개선 방법: <strong>클로저</strong>를 활용하여 화면간 데이터 전송을 구현했습니다. 또한, weak self를 사용하여 <span class="highlight">메모리 누수를 방지</span>하고 안전한 데이터 전달을 구현했습니다.</div>
+                    </div>
+                    <div class="achievement">문제: 코드 리팩토링 후, ViewController에서 변경 사항을 감지할 수 없어 UI가 자동으로 업데이트되지 않는 구조였습니다.<hr>
+                        <div>개선 방법: <strong>Combine</strong>을 사용하여 파이어베이스 데이터 프로퍼티의 변경을 실시간으로 감지하도록 설정했습니다. 데이터 변경을 감지할 시 자동으로 테이블뷰를 업데이트 하도록 구현했습니다. </div>
                     </div>
                 </li>
                 <li><strong>클린 아키텍쳐와 유지보수</strong>
